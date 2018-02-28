@@ -7857,6 +7857,11 @@ html {
  #tm-heading-5a8ab5a8ecfa1:hover .text{
     color:#fff;
 }
+
+#tm-heading-5a8ab53925c08 .heading{
+	font-size:16px;
+    line-height:1.7;
+}
  @media ( max-width:1199px){
      #tm-column-5a8ab5391fa5f>.vc_column-inner{
         padding-right:50px!important;
