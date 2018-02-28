@@ -6169,12 +6169,12 @@ html {
 }
  .page-title-bar.big-style .page-title-bar-inner{
     background-color:rgba(0,0,0,0);
-    background-image:url(../images/page-title-bg.jpg);
+    background-image:url(../images/ecoshine-header.png);
     background-repeat:no-repeat;
-    background-position:left top;
+    background-position:left center;
     background-attachment:scroll;
-    padding-top:110px;
-    padding-bottom:110px;
+    padding-top:310px;
+    padding-bottom:310px;
     margin-top:0px;
     margin-bottom:0px;
     -webkit-background-size:cover;
