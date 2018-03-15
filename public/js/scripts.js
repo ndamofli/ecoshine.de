@@ -530,24 +530,36 @@ jQuery( document ).ready( function ( $ ) {
     if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
       window.currentSelection = "mittel";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
-	  $('#bookIframe').height("1700px");
     }
     if( $(this).hasClass("sedan") && window.currentSelection != "sedan"){
       window.currentSelection = "sedan";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
-	  $('#bookIframe').height("1700px");
     }
     if( $(this).hasClass("suv") && window.currentSelection != "suv"){
       window.currentSelection = "suv";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
-	  $('#bookIframe').height("1700px");
     }
     if( $(this).hasClass("smart") && window.currentSelection != "smart"){
       window.currentSelection = "smart";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
-	  $('#bookIframe').height("1700px");
     }
   });
+  function bindEvent(element, eventName, eventHandler) {
+    if (element.addEventListener) {
+      element.addEventListener(eventName, eventHandler, false);
+    } else if (element.attachEvent) {
+      element.attachEvent('on' + eventName, eventHandler);
+    }
+  }
+  bindEvent(window, 'message', function (e) {
+    if(e.data && $.type( e.data ) === "string" && e.data.indexOf("sizing") >= 0){
+      var newHeight = parseInt(e.data.replace("sizing:", ""))+100;
+      $('#bookIframe').height(newHeight+"px");
+	  console.log("gotcha:"+newHeight);
+    }
+  });
+
+
 
   $('body').smoothScroll({
     delegateSelector: 'a',
