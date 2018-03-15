@@ -528,6 +528,7 @@ jQuery( document ).ready( function ( $ ) {
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
 //	id="book2"
+  window.oldHeight = 0;
   $.smoothScroll({
     scrollTarget: '#book2',
 	offset:-100
@@ -559,6 +560,14 @@ jQuery( document ).ready( function ( $ ) {
   bindEvent(window, 'message', function (e) {
     if(e.data && $.type( e.data ) === "string" && e.data.indexOf("sizing") >= 0){
       var newHeight = parseInt(e.data.replace("sizing:", ""))+100;
+      if(window.oldHeight > 0){
+        var newScroll = newHeight - window.oldHeight - 100;
+        $.smoothScroll({
+          scrollTarget: '#book2',
+          offset:newScroll
+        });
+        window.oldHeight = newHeight;
+	  }
       $('#bookIframe').height(newHeight+"px");
 	  //console.log("gotcha:"+newHeight);
     }
