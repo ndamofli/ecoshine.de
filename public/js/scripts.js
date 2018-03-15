@@ -527,6 +527,11 @@ jQuery( document ).ready( function ( $ ) {
 //	$("#selectPackage").css("display", "block");
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
+//	id="book2"
+  $.smoothScroll({
+    scrollTarget: '#book2',
+	offset:-100
+  });
     if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
       window.currentSelection = "mittel";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
@@ -555,12 +560,9 @@ jQuery( document ).ready( function ( $ ) {
     if(e.data && $.type( e.data ) === "string" && e.data.indexOf("sizing") >= 0){
       var newHeight = parseInt(e.data.replace("sizing:", ""))+100;
       $('#bookIframe').height(newHeight+"px");
-	  console.log("gotcha:"+newHeight);
+	  //console.log("gotcha:"+newHeight);
     }
   });
-
-
-
   $('body').smoothScroll({
     delegateSelector: 'a',
     offset:-100
