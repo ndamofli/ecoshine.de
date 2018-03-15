@@ -6554,11 +6554,11 @@ html {
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?8ckr52');
-  src:  url('../fonts/icomoon/icomoon.eot?8ckr52#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?8ckr52') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?8ckr52') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?8ckr52#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?wqv8cr');
+  src:  url('../fonts/icomoon/icomoon.eot?wqv8cr#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?wqv8cr') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?wqv8cr') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?wqv8cr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -6578,6 +6578,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-suv:before {
+  content: "\e913";
+}
+.icon-small:before {
+  content: "\e914";
+}
+.icon-sedan:before {
+  content: "\e915";
+}
+.icon-smart:before {
+  content: "\e916";
+}
 .icon-play_circle_outline:before {
   content: "\e900";
 }
