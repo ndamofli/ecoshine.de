@@ -521,18 +521,15 @@ jQuery( document ).ready( function ( $ ) {
   "use strict";
   $('.abouts').matchHeight({byRow: false,property: 'height'});
   $('.abouts2').matchHeight({byRow: false,property: 'height'});
-
+  window.oldHeight = 0;
   window.currentSelection = "null";	
   $(".typeSelector").click(function () {
-//	$("#selectPackage").css("display", "block");
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
-//	id="book2"
-  window.oldHeight = 0;
-  $.smoothScroll({
-    scrollTarget: '#book2',
-	offset:-100
-  });
+
+    $.smoothScroll({
+      scrollTarget: '#book2'
+    });
     if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
       window.currentSelection = "mittel";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
@@ -559,18 +556,19 @@ jQuery( document ).ready( function ( $ ) {
   }
   bindEvent(window, 'message', function (e) {
     if(e.data && $.type( e.data ) === "string" && e.data.indexOf("sizing") >= 0){
-      var newHeight = parseInt(e.data.replace("sizing:", ""))+100;
-      if(window.oldHeight > 0){
-        var newScroll = newHeight - window.oldHeight - 100;
-        $.smoothScroll({
-          scrollTarget: '#book2',
-          offset:newScroll
-        });
-        window.oldHeight = newHeight;
-	  }
+      var newHeight = parseInt(e.data.replace("sizing:", ""));
+	  //console.log("newHeight"+newHeight);
       $('#bookIframe').height(newHeight+"px");
-	  //console.log("gotcha:"+newHeight);
+
     }
+    if(e.data && $.type( e.data ) === "string" && e.data.indexOf("scrollTo") >= 0){
+      var newScroll = parseInt(e.data.replace("scrollTo:", ""));
+	  newScroll = newScroll-200;
+      $.smoothScroll({
+        scrollTarget: '#book2',
+        offset:newScroll
+      });
+    }	
   });
   $('body').smoothScroll({
     delegateSelector: 'a',
