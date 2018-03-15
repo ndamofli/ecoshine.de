@@ -1469,66 +1469,12 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
     <script type='text/javascript' src='js/jquery.counterup.min.js'></script>
     <script type='text/javascript' src='js/jquery.smartmenus.min.js'></script>
     <script type='text/javascript' src='js/js_composer_front.min.js'></script>
-    <script type='text/javascript'>
-      /* <![CDATA[ */
-      var $insight = {"templateUrl":"http:\/\/autoxpert.zooka.io\/wp-content\/themes\/autoxpert","ajaxurl":"http:\/\/autoxpert.zooka.io\/wp-admin\/admin-ajax.php","primary_color":"#1F275F","header_sticky_enable":"1","header_sticky_height":null,"footer_effect":"always_bottom","scroll_top_enable":"1","like":"Like","unlike":"Unlike"};
-      /* ]]> */
-    </script>
     <script type='text/javascript' src='js/main.min.js'></script>
     <script type='text/javascript' src='js/webfont.js'></script>
-    <script type='text/javascript'>
-      WebFont.load({google:{families:['Open Sans:600,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,700,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i']}});
-    </script>
     <script type='text/javascript' src='js/accordion.js'></script>
-    <script type='text/javascript'>
-      /* <![CDATA[ */
-      var wpcf7 = {"apiSettings":{"root":"http:\/\/autoxpert.zooka.io\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
-      /* ]]> */
-
-
-jQuery( document ).ready( function ( $ ) {
-  "use strict";
-  $('.abouts').matchHeight({byRow: false,property: 'height'});
-  $('.abouts2').matchHeight({byRow: false,property: 'height'});
-
-  window.currentSelection = "null";	
-  $(".typeSelector").click(function () {
-//	$("#selectPackage").css("display", "block");
-    $(".typeSelector").removeClass("blueSelected");
-    $(this).addClass("blueSelected");
-    if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
-      window.currentSelection = "mittel";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
-	  $('#bookIframe').height("1700px");
-    }
-    if( $(this).hasClass("sedan") && window.currentSelection != "sedan"){
-      window.currentSelection = "sedan";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
-	  $('#bookIframe').height("1700px");
-    }
-    if( $(this).hasClass("suv") && window.currentSelection != "suv"){
-      window.currentSelection = "suv";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
-	  $('#bookIframe').height("1700px");
-    }
-    if( $(this).hasClass("smart") && window.currentSelection != "smart"){
-      window.currentSelection = "smart";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
-	  $('#bookIframe').height("1700px");
-    }
-  });
-
-  $('body').smoothScroll({
-    delegateSelector: 'a',
-    offset:-100
-  });
-
-} );
-
-    </script>
-
-    <script src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js" type="text/javascript"></script>
     <script type='text/javascript' src='js/scripts.js'></script>
+    <script type="text/javascript" src="https://d3gxy7nm8y4yjr.cloudfront.net/js/embed.js"></script>
+
   </body>
 
 </html>

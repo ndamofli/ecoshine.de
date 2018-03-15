@@ -515,3 +515,45 @@
 
 	window.CustomEvent = CustomEvent;
 } )();
+
+
+jQuery( document ).ready( function ( $ ) {
+  "use strict";
+  $('.abouts').matchHeight({byRow: false,property: 'height'});
+  $('.abouts2').matchHeight({byRow: false,property: 'height'});
+
+  window.currentSelection = "null";	
+  $(".typeSelector").click(function () {
+//	$("#selectPackage").css("display", "block");
+    $(".typeSelector").removeClass("blueSelected");
+    $(this).addClass("blueSelected");
+    if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
+      window.currentSelection = "mittel";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
+	  $('#bookIframe').height("1700px");
+    }
+    if( $(this).hasClass("sedan") && window.currentSelection != "sedan"){
+      window.currentSelection = "sedan";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
+	  $('#bookIframe').height("1700px");
+    }
+    if( $(this).hasClass("suv") && window.currentSelection != "suv"){
+      window.currentSelection = "suv";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
+	  $('#bookIframe').height("1700px");
+    }
+    if( $(this).hasClass("smart") && window.currentSelection != "smart"){
+      window.currentSelection = "smart";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
+	  $('#bookIframe').height("1700px");
+    }
+  });
+
+  $('body').smoothScroll({
+    delegateSelector: 'a',
+    offset:-100
+  });
+
+} );
+
+      WebFont.load({google:{families:['Open Sans:600,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,700,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i,300i,400,400i,600i,700i,800i']}});
