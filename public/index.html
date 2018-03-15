@@ -54,23 +54,20 @@
                   <div id="page-navigation" class="navigation page-navigation">
                     <nav id="menu" class="menu menu--primary">
                       <ul id="menu-primary-menu" class="menu__container sm sm-simple">
-                        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor">
-                          <a href="#home"><span class="menu-item-title toHome">Home</span></a>
+                        <li class="menu-item">
+                          <a href="#about" rel="about"><span class="menu-item-title about">Über uns</span></a>
                         </li>
                         <li class="menu-item">
-                          <a href="#about"><span class="menu-item-title about">Über uns</span></a>
+                          <a href="#eco" data-easing="linear" rel="eco"><span class="menu-item-title eco">Ökologie</span></a>
                         </li>
                         <li class="menu-item">
-                          <a href="#eco"><span class="menu-item-title eco">Ökologie</span></a>
+                          <a href="#services" data-easing="linear" rel="services"><span class="menu-item-title services">Dienstleistungen</span></a>
                         </li>
                         <li class="menu-item">
-                          <a href="#services"><span class="menu-item-title services">Dienstleistungen</span></a>
+                          <a href="#faq" rel="faq"><span class="menu-item-title faq">FAQ</span></a>
                         </li>
                         <li class="menu-item">
-                          <a href="#faq"><span class="menu-item-title faq">FAQ</span></a>
-                        </li>
-                        <li class="menu-item">
-                          <a href="#contact"><span class="menu-item-title contact">Kontaktieren</span></a>
+                          <a href="#contact" rel="contact"><span class="menu-item-title contact">Kontaktieren</span></a>
                         </li>                   
                       </ul>
                     </nav>
@@ -1030,7 +1027,7 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
                   
                   <div class="vc_row-full-width vc_clearfix"></div>
 
-                  <div id="tm-row-5a8ab52f712dc" class="vc_row vc_row-outer vc_row-fluid vc_row-o-content-middle vc_row-flex">
+                  <div id="book" class="vc_row vc_row-outer vc_row-fluid vc_row-o-content-middle vc_row-flex">
                     <div id="tm-column-5a8ab52f7321c" class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-offset-2 vc_col-lg-8">
                       <div class="vc_column-inner">
                         <div class="wpb_wrapper">
@@ -1185,7 +1182,7 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
                   </div>  
                   <div class="vc_row-full-width vc_clearfix"></div>-->
 
-                  <div id="book" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f243">
+                  <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f243">
 <!--                      <iframe id="bookIframe" width="100%" height="100%" src=""></iframe>-->
                       <iframe id="bookIframe" width="100%" height="20" frameBorder="0"></iframe>
                   </div>                         
@@ -1424,8 +1421,8 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
 
     <div id="page-mobile-main-menu" class="page-mobile-main-menu">
       <div class="page-mobile-menu-header">
-        <div class="page-mobile-menu-logo">
-          <a href="../index.html" rel="home">
+        <div class="page-mobile-menu-logo toHome">
+          <a href="#home" rel="home">
           <img src="images/logo.png"
             alt=""/>
           </a>
@@ -1435,16 +1432,13 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
         </div>
       </div>
       <ul id="mobile-menu-primary" class="menu__container">
-        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
-          <a href="../index.html"><span class="menu-item-title">Home</span><span class="toggle-sub-menu"> </span></a>
-          <ul class="sub-menu">
-             <li class="menu-item current-menu-item page_item current_page_item">
-              <a href="index.html">
-                <span class="menu-item-title">Home 03</span>
-              </a>
-            </li>
-          </ul>
+        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor">
+          <a href="#about" rel="about"><span class="menu-item-title">Über uns</span></a>
         </li>
+        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor">
+          <a href="#eco" rel="eco"><span class="menu-item-title">Ökologie</span></a>
+        </li>
+        
         <li class="menu-item menu-item-has-children">
           <a href="../services/index.html"><span class="menu-item-title">Services</span><span class="toggle-sub-menu"> </span></a>
           <ul class="sub-menu">
@@ -1663,43 +1657,10 @@ jQuery( document ).ready( function ( $ ) {
     }
   });
 
-
-$('.about').on('click', function() {
-	console.log("here");
-  $.smoothScroll({
-    scrollTarget: '#about',
-	offset: -150
+  $('body').smoothScroll({
+    delegateSelector: 'a',
+    offset:-100
   });
-  return false;
-});
-$('.eco').on('click', function() {
-  $.smoothScroll({
-    scrollTarget: '#eco',
-	offset: -80
-  });
-  return false;
-});
-$('.services').on('click', function() {
-  $.smoothScroll({
-    scrollTarget: '#services',
-	offset: -60
-  });
-  return false;
-});
-$('.faq').on('click', function() {
-  $.smoothScroll({
-    scrollTarget: '#faq',
-	offset: -60
-  });
-  return false;
-});
-$('.book').on('click', function() {
-  $.smoothScroll({
-    scrollTarget: '#book',
-	offset: -700
-  });
-  return false;
-});
 
 } );
 
