@@ -54,19 +54,22 @@
                   <div id="page-navigation" class="navigation page-navigation">
                     <nav id="menu" class="menu menu--primary">
                       <ul id="menu-primary-menu" class="menu__container sm sm-simple">
-                        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children">
+                        <li class="menu-item menu-item-home current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor">
                           <a href="#home"><span class="menu-item-title toHome">Home</span></a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item">
                           <a href="#about"><span class="menu-item-title about">Über uns</span></a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item">
                           <a href="#eco"><span class="menu-item-title eco">Ökologie</span></a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item">
                           <a href="#services"><span class="menu-item-title services">Dienstleistungen</span></a>
                         </li>
-                        <li class="menu-item menu-item-has-children">
+                        <li class="menu-item">
+                          <a href="#faq"><span class="menu-item-title faq">FAQ</span></a>
+                        </li>
+                        <li class="menu-item">
                           <a href="#contact"><span class="menu-item-title contact">Kontaktieren</span></a>
                         </li>                   
                       </ul>
@@ -75,8 +78,8 @@
                 </div>
                 <div class="col-xs-6 col-xl-2">
                   <div class="header-right text-align-xs-right">
-                    <div class="header-button">
-                      <a href="#" target="_blank">BOOK NOW</a>
+                    <div class="header-button book">
+                      <a href="#book" target="_blank">BOOK NOW</a>
                     </div>
                     <div id="page-open-mobile-menu" class="page-open-mobile-menu">
                       <div><i></i></div>
@@ -529,7 +532,7 @@
 
                   
 
-                  <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f242">
+                  <div id="services" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f242">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                       <div class="vc_column-inner">
                         <div class="wpb_wrapper">
@@ -655,7 +658,7 @@
 
                  
                   <div class="vc_row-full-width vc_clearfix"></div>
-                  <div id="tm-row-5a8ab4dc6f46b" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid rmbg-md-down">
+                  <div id="faq" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid rmbg-md-down">
                     <div id="tm-column-5a8ab4dc71506" class="wpb_column vc_column_container vc_col-sm-6 vc_hidden-md vc_hidden-sm vc_hidden-xs">
                       <div class="vc_column-inner">
                         <div class="wpb_wrapper"></div>
@@ -1180,7 +1183,7 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
                   </div>  
                   <div class="vc_row-full-width vc_clearfix"></div>-->
 
-                  <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f243">
+                  <div id="book" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row vc_row-outer vc_row-fluid tm-row-5a8ab4dc1f243">
 <!--                      <iframe id="bookIframe" width="100%" height="100%" src=""></iframe>-->
                       <iframe id="bookIframe" width="100%" height="20" frameBorder="0"></iframe>
                   </div>                         
@@ -1671,6 +1674,27 @@ $('.eco').on('click', function() {
   $.smoothScroll({
     scrollTarget: '#eco',
 	offset: -80
+  });
+  return false;
+});
+$('.services').on('click', function() {
+  $.smoothScroll({
+    scrollTarget: '#services',
+	offset: -60
+  });
+  return false;
+});
+$('.faq').on('click', function() {
+  $.smoothScroll({
+    scrollTarget: '#faq',
+	offset: -60
+  });
+  return false;
+});
+$('.book').on('click', function() {
+  $.smoothScroll({
+    scrollTarget: '#book',
+	offset: -700
   });
   return false;
 });
