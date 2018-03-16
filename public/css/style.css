@@ -6578,6 +6578,57 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-barcode:before {
+  content: "\e917";
+}
+.icon-users:before {
+  content: "\e918";
+}
+.icon-group:before {
+  content: "\e918";
+}
+.icon-team:before {
+  content: "\e918";
+}
+.icon-members:before {
+  content: "\e918";
+}
+.icon-community:before {
+  content: "\e918";
+}
+.icon-collaborate:before {
+  content: "\e918";
+}
+.icon-droplet:before {
+  content: "\e919";
+}
+.icon-color:before {
+  content: "\e919";
+}
+.icon-water:before {
+  content: "\e919";
+}
+.icon-earth:before {
+  content: "\e91a";
+}
+.icon-globe:before {
+  content: "\e91a";
+}
+.icon-language:before {
+  content: "\e91a";
+}
+.icon-web:before {
+  content: "\e91a";
+}
+.icon-internet:before {
+  content: "\e91a";
+}
+.icon-sphere:before {
+  content: "\e91a";
+}
+.icon-planet:before {
+  content: "\e91a";
+}
 .icon-suv:before {
   content: "\e913";
 }
@@ -6654,151 +6705,7 @@ html {
   content: "\e90d";
 }
 
- @font-face {
-     font-family: 'carepair';
-     src: url("../fonts/carepair/carepair4746.ttf?5jfy3x") format("truetype"), url("../fonts/carepair/carepair4746.woff?5jfy3x") format("woff"), url("../fonts/carepair/carepair4746.svg?5jfy3x#carepair") format("svg");
-     font-weight: normal;
-     font-style: normal;
-}
- [class^="cp-"], [class*=" cp-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-     font-family: 'carepair' !important;
-     speak: none;
-     font-style: normal;
-     font-weight: normal;
-     font-variant: normal;
-     text-transform: none;
-     line-height: 1;
-    /* Better Font Rendering =========== */
-     -webkit-font-smoothing: antialiased;
-     -moz-osx-font-smoothing: grayscale;
-}
- .cp-40:before {
-     content: "\e900";
-}
- .cp-42:before {
-     content: "\e902";
-}
- .cp-43:before {
-     content: "\e903";
-}
- .cp-36:before {
-     content: "\e904";
-}
- .cp-37:before {
-     content: "\e905";
-}
- .cp-38:before {
-     content: "\e906";
-}
- .cp-39:before {
-     content: "\e907";
-}
- .cp-32:before {
-     content: "\e908";
-}
- .cp-33:before {
-     content: "\e909";
-}
- .cp-34:before {
-     content: "\e90a";
-}
- .cp-35:before {
-     content: "\e90b";
-}
- .cp-28:before {
-     content: "\e90c";
-}
- .cp-29:before {
-     content: "\e90d";
-}
- .cp-30:before {
-     content: "\e90e";
-}
- .cp-31:before {
-     content: "\e90f";
-}
- .cp-24:before {
-     content: "\e910";
-}
- .cp-25:before {
-     content: "\e911";
-}
- .cp-26:before {
-     content: "\e912";
-}
- .cp-27:before {
-     content: "\e913";
-}
- .cp-20:before {
-     content: "\e914";
-}
- .cp-21:before {
-     content: "\e915";
-}
- .cp-22:before {
-     content: "\e916";
-}
- .cp-23:before {
-     content: "\e917";
-}
- .cp-16:before {
-     content: "\e918";
-}
- .cp-17:before {
-     content: "\e919";
-}
- .cp-18:before {
-     content: "\e91a";
-}
- .cp-19:before {
-     content: "\e91b";
-}
- .cp-12:before {
-     content: "\e91c";
-}
- .cp-13:before {
-     content: "\e91d";
-}
- .cp-14:before {
-     content: "\e91e";
-}
- .cp-15:before {
-     content: "\e91f";
-}
- .cp-8:before {
-     content: "\e920";
-}
- .cp-9:before {
-     content: "\e921";
-}
- .cp-10:before {
-     content: "\e922";
-}
- .cp-11:before {
-     content: "\e923";
-}
- .cp-4:before {
-     content: "\e924";
-}
- .cp-5:before {
-     content: "\e925";
-}
- .cp-6:before {
-     content: "\e926";
-}
- .cp-7:before {
-     content: "\e927";
-}
- .cp-1:before {
-     content: "\e928";
-}
- .cp-2:before {
-     content: "\e929";
-}
- .cp-3:before {
-     content: "\e92a";
-}
+
 /*! CSS Used from: http://192.168.1.11/ecoshine.de/htt/autoxpert/autoxpert.zooka.io/wp-content/themes/autoxpert/styles.css */
  #tm-row-5a8ab538cb056{
     margin-top:-108px!important;
