@@ -6578,6 +6578,39 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-sphere:before {
+  content: "\e91b";
+}
+.icon-globe:before {
+  content: "\e91b";
+}
+.icon-internet:before {
+  content: "\e91b";
+}
+.icon-credit-card:before {
+  content: "\e91c";
+}
+.icon-money:before {
+  content: "\e91c";
+}
+.icon-payment:before {
+  content: "\e91c";
+}
+.icon-ecommerce:before {
+  content: "\e91c";
+}
+.icon-heart:before {
+  content: "\e91d";
+}
+.icon-like:before {
+  content: "\e91d";
+}
+.icon-love:before {
+  content: "\e91d";
+}
+.icon-favorite:before {
+  content: "\e91d";
+}
 .icon-barcode:before {
   content: "\e917";
 }
@@ -6611,7 +6644,7 @@ html {
 .icon-earth:before {
   content: "\e91a";
 }
-.icon-globe:before {
+.icon-globe2:before {
   content: "\e91a";
 }
 .icon-language:before {
@@ -6620,10 +6653,10 @@ html {
 .icon-web:before {
   content: "\e91a";
 }
-.icon-internet:before {
+.icon-internet2:before {
   content: "\e91a";
 }
-.icon-sphere:before {
+.icon-sphere2:before {
   content: "\e91a";
 }
 .icon-planet:before {
@@ -6647,7 +6680,7 @@ html {
 .icon-angle-up:before {
   content: "\e912";
 }
-.icon-heart:before {
+.icon-heart2:before {
   content: "\e90e";
 }
 .icon-angle-left:before {
@@ -8084,7 +8117,6 @@ html {
 }
  .vc_custom_1505979426053{
     margin-bottom:35px!important;
-    padding-top:6px!important;
 }
  .vc_custom_1505727608977{
     margin-bottom:25px!important;
