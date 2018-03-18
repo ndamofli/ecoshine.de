@@ -1679,7 +1679,7 @@ html {
      padding: 20px 30px;
      max-width: 100%;
      width: 100%;
-     min-height: 200px;
+     min-height: 100px;
 }
  ::-webkit-resizer {
      width: 0;
@@ -6827,12 +6827,18 @@ html {
  #tm-heading-5a8ab53951216{
     margin-bottom:35px!important;
 }
- #tm-row-5a8ab539541f5{
-    background-color:#f7f7f7;
-    background-image:url(../images/h3-find-service-bg.jpg);
-    background-size:cover;
-    background-repeat:no-repeat;
+#contact{
+    color:#fff;
+	padding-top:60px;
+	padding-bottom:60px;
 }
+#contact h2, #contact h2 strong, #contact h1{
+    color:#fff;
+}
+#tm-heading-5a8ab5399bd85 h2 strong{
+   color:#2D72FE;
+}
+
  #tm-column-5a8ab539599c4>.vc_column-inner{
     padding-top:80px!important;
     padding-bottom:80px!important;
@@ -6849,9 +6855,9 @@ html {
     -webkit-box-shadow:0 10px 30px rgba(170,170,170,0.21);
     box-shadow:0 10px 30px rgba(170,170,170,0.21);
     background-color:#fff;
-    padding-top:80px!important;
+    padding-top:30px!important;
     padding-right:30px!important;
-    padding-bottom:90px!important;
+    padding-bottom:30px!important;
     padding-left:30px!important;
 }
  #tm-heading-5a8ab5399bd85 .heading{
