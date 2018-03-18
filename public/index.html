@@ -15,14 +15,13 @@
     <!--<link rel='dns-prefetch' href='http://s.w.org/' />-->
 
     <link rel='stylesheet' href='css/style.min.css' type='text/css' media='all' />
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115880618-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-115880618-1');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115880618-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-115880618-1');
+    </script>
 
     <!--[if lte IE 9]>
     <link rel="stylesheet" type="text/css" href="css/vc_lte_ie9.min.css" media="screen">
@@ -1265,7 +1264,7 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
                                       <div class="screen-reader-response"></div>
                                       <form action="#contact" method="post" netlify netlify-honeypot="bot-field">
                                         <p class="wpcf7-display-none">
-                                          <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+                                          <label>bots<input name="bot-field"></label>
                                         </p>
                                         <div class="row">
                                           <div class="col-sm-12">
@@ -1277,6 +1276,7 @@ Abgesehen von der Abschirmung, reflektiert die Lackierung Ihres Autos auch mehr 
                                           <div class="col-sm-12">
                                             <span class="wpcf7-form-control-wrap your-message"><textarea name="message" cols="40" rows="3" aria-required="true" aria-invalid="false" placeholder="Your message"></textarea></span>
                                           </div>
+                                          <div netlify-recaptcha></div>
                                           <div class="col-sm-12 text-align-xs-center">
                                             <input type="submit" value="KONTAKTIEREN" class="tm-button tm-button-nm tm-button-default">
                                           </div>
