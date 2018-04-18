@@ -28,6 +28,7 @@ jQuery( document ).ready( function ( $ ) {
   $(".typeSelector").click(function () {
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
+	$(".schritts").hide();
 
     $.smoothScroll({
       scrollTarget: '#book2'
