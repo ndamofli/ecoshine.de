@@ -26,7 +26,6 @@ jQuery( document ).ready( function ( $ ) {
   window.oldHeight = 0;
   window.currentSelection = "null";	
   $(".typeSelector").click(function () {
-    ga('send', 'event', 'Bookings', 'started');
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
 	$(".schritts").hide();
