@@ -1,3 +1,97 @@
+<!--
+ This is a general html file
+ for doing firebase web mechanisms like
+ twitter,github authentication etc
+ This file needs to be hosted on a web server
+ to work in a standalone app
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <style>
+        .web-view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            vertical-align: middle;
+            height: 100vh;
+            flex-direction: column;
+            font-family: 'Roboto', sans-serif;
+        }
+        .web-view .title {
+            color: #fff;
+        }
 
-<!-- saved from url=(0044)https://arivaa-firebase.laxaar.com/demo.html -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><div class="line-gutter-backdrop"></div><table><tbody><tr><td class="line-number" value="1"></td><td class="line-content"><span class="html-comment">&lt;!--</span></td></tr><tr><td class="line-number" value="2"></td><td class="line-content"><span class="html-comment"> This is a general html file</span></td></tr><tr><td class="line-number" value="3"></td><td class="line-content"><span class="html-comment"> for doing firebase web mechanisms like</span></td></tr><tr><td class="line-number" value="4"></td><td class="line-content"><span class="html-comment"> twitter,github authentication etc</span></td></tr><tr><td class="line-number" value="5"></td><td class="line-content"><span class="html-comment"> This file needs to be hosted on a web server</span></td></tr><tr><td class="line-number" value="6"></td><td class="line-content"><span class="html-comment"> to work in a standalone app</span></td></tr><tr><td class="line-number" value="7"></td><td class="line-content"><span class="html-comment"> --&gt;</span></td></tr><tr><td class="line-number" value="8"></td><td class="line-content"><span class="html-doctype">&lt;!DOCTYPE html&gt;</span></td></tr><tr><td class="line-number" value="9"></td><td class="line-content"><span class="html-tag">&lt;html&gt;</span></td></tr><tr><td class="line-number" value="10"></td><td class="line-content"><span class="html-tag">&lt;head&gt;</span></td></tr><tr><td class="line-number" value="11"></td><td class="line-content">	<span class="html-tag">&lt;meta <span class="html-attribute-name">name</span>="<span class="html-attribute-value">viewport</span>" <span class="html-attribute-name">content</span>="<span class="html-attribute-value">width=device-width, initial-scale=1</span>"&gt;</span></td></tr><tr><td class="line-number" value="12"></td><td class="line-content">	<span class="html-tag">&lt;link <span class="html-attribute-name">href</span>="<a class="html-attribute-value html-resource-link" target="_blank" href="https://fonts.googleapis.com/css?family=Roboto">https://fonts.googleapis.com/css?family=Roboto</a>" <span class="html-attribute-name">rel</span>="<span class="html-attribute-value">stylesheet</span>"&gt;</span></td></tr><tr><td class="line-number" value="13"></td><td class="line-content">	<span class="html-tag">&lt;style&gt;</span></td></tr><tr><td class="line-number" value="14"></td><td class="line-content">		.web-view {</td></tr><tr><td class="line-number" value="15"></td><td class="line-content">			display: flex;</td></tr><tr><td class="line-number" value="16"></td><td class="line-content">			justify-content: center;</td></tr><tr><td class="line-number" value="17"></td><td class="line-content">			align-items: center;</td></tr><tr><td class="line-number" value="18"></td><td class="line-content">			align-self: center;</td></tr><tr><td class="line-number" value="19"></td><td class="line-content">			vertical-align: middle;</td></tr><tr><td class="line-number" value="20"></td><td class="line-content">			height: 100vh;</td></tr><tr><td class="line-number" value="21"></td><td class="line-content">			flex-direction: column;</td></tr><tr><td class="line-number" value="22"></td><td class="line-content">			font-family: 'Roboto', sans-serif;</td></tr><tr><td class="line-number" value="23"></td><td class="line-content">		}</td></tr><tr><td class="line-number" value="24"></td><td class="line-content">		.web-view .title {</td></tr><tr><td class="line-number" value="25"></td><td class="line-content">			color: #fff;</td></tr><tr><td class="line-number" value="26"></td><td class="line-content">		}</td></tr><tr><td class="line-number" value="27"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="28"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="29"></td><td class="line-content">		@keyframes spin {</td></tr><tr><td class="line-number" value="30"></td><td class="line-content">			0% {</td></tr><tr><td class="line-number" value="31"></td><td class="line-content">				transform: rotate(0deg);</td></tr><tr><td class="line-number" value="32"></td><td class="line-content">			}</td></tr><tr><td class="line-number" value="33"></td><td class="line-content">			100% {</td></tr><tr><td class="line-number" value="34"></td><td class="line-content">				transform: rotate(360deg);</td></tr><tr><td class="line-number" value="35"></td><td class="line-content">			}</td></tr><tr><td class="line-number" value="36"></td><td class="line-content">		}</td></tr><tr><td class="line-number" value="37"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="38"></td><td class="line-content"><br></td></tr><tr><td class="line-number" value="39"></td><td class="line-content">		.toast p {</td></tr><tr><td class="line-number" value="40"></td><td class="line-content">			margin: 0;</td></tr><tr><td class="line-number" value="41"></td><td class="line-content">			margin-top: 10px;</td></tr><tr><td class="line-number" value="42"></td><td class="line-content">			font-family: 'Roboto', sans-serif;</td></tr><tr><td class="line-number" value="43"></td><td class="line-content">		}</td></tr><tr><td class="line-number" value="44"></td><td class="line-content">	<span class="html-tag">&lt;/style&gt;</span></td></tr><tr><td class="line-number" value="45"></td><td class="line-content"><span class="html-tag">&lt;/head&gt;</span></td></tr><tr><td class="line-number" value="46"></td><td class="line-content"><span class="html-tag">&lt;body <span class="html-attribute-name">style</span>="<span class="html-attribute-value">background:#ff5a60</span>"&gt;</span></td></tr><tr><td class="line-number" value="47"></td><td class="line-content"><span class="html-tag">&lt;div <span class="html-attribute-name">class</span>="<span class="html-attribute-value">web-view</span>"&gt;</span></td></tr><tr><td class="line-number" value="48"></td><td class="line-content">	<span class="html-tag">&lt;p <span class="html-attribute-name">class</span>="<span class="html-attribute-value">title</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">title</span>"&gt;</span>Demo Page<span class="html-tag">&lt;/p&gt;</span></td></tr><tr><td class="line-number" value="49"></td><td class="line-content">	<span class="html-tag">&lt;div <span class="html-attribute-name">id</span>="<span class="html-attribute-value">main-container</span>"&gt;</span></td></tr><tr><td class="line-number" value="50"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('GET_USER_TAGS')</span>"&gt;</span>Get User Tags<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="51"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('SET_USER_TAGS',[</span></span></td></tr><tr><td class="line-number" value="52"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            'tag1'+Math.random(),'tag2','tag3'</span></span></td></tr><tr><td class="line-number" value="53"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">        ])</span>"&gt;</span>Set User Tags<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="54"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('SHOW_REWARDED_AD')</span>"&gt;</span>Show Rewarded Ad<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="55"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('START_SPEECH',{</span></span></td></tr><tr><td class="line-number" value="56"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            'text' : 'Hi there'</span></span></td></tr><tr><td class="line-number" value="57"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">        })</span>"&gt;</span>Start Speech<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="58"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('STOP_SPEECH')</span>"&gt;</span>Stop Speech<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="59"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('SHOW_WEBVIEW',{</span></span></td></tr><tr><td class="line-number" value="60"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            uri : 'https://www.google.com'</span></span></td></tr><tr><td class="line-number" value="61"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">        })</span>"&gt;</span>Show WebView<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="62"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('LOGOUT')</span>"&gt;</span>Logout<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="63"></td><td class="line-content">		<span class="html-tag">&lt;Button <span class="html-attribute-name">onclick</span>="<span class="html-attribute-value">sendAction('SHARE',{</span></span></td></tr><tr><td class="line-number" value="64"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            title : 'Test Title',</span></span></td></tr><tr><td class="line-number" value="65"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            message : 'Test Message',</span></span></td></tr><tr><td class="line-number" value="66"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            options : {</span></span></td></tr><tr><td class="line-number" value="67"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">                url : 'https://www.google.com'</span></span></td></tr><tr><td class="line-number" value="68"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">            }</span></span></td></tr><tr><td class="line-number" value="69"></td><td class="line-content"><span class="html-tag"><span class="html-attribute-value">        })</span>"&gt;</span>Share<span class="html-tag">&lt;/Button&gt;</span></td></tr><tr><td class="line-number" value="70"></td><td class="line-content">	<span class="html-tag">&lt;/div&gt;</span></td></tr><tr><td class="line-number" value="71"></td><td class="line-content">	<span class="html-tag">&lt;p <span class="html-attribute-name">class</span>="<span class="html-attribute-value">title</span>" <span class="html-attribute-name">id</span>="<span class="html-attribute-value">message</span>"&gt;</span><span class="html-tag">&lt;/p&gt;</span></td></tr><tr><td class="line-number" value="72"></td><td class="line-content"><span class="html-tag">&lt;/div&gt;</span></td></tr><tr><td class="line-number" value="73"></td><td class="line-content"><span class="html-tag">&lt;script&gt;</span></td></tr><tr><td class="line-number" value="74"></td><td class="line-content">	window.sendAction = function(code,data){</td></tr><tr><td class="line-number" value="75"></td><td class="line-content">		window.rnSend({</td></tr><tr><td class="line-number" value="76"></td><td class="line-content">			code,</td></tr><tr><td class="line-number" value="77"></td><td class="line-content">			data</td></tr><tr><td class="line-number" value="78"></td><td class="line-content">		});</td></tr><tr><td class="line-number" value="79"></td><td class="line-content">	};</td></tr><tr><td class="line-number" value="80"></td><td class="line-content">	window.showMessage = function(message){</td></tr><tr><td class="line-number" value="81"></td><td class="line-content">		document.getElementById("message").innerHTML=message;</td></tr><tr><td class="line-number" value="82"></td><td class="line-content">	};</td></tr><tr><td class="line-number" value="83"></td><td class="line-content">	document.addEventListener("WEBVIEW_HIDE", function(e) {</td></tr><tr><td class="line-number" value="84"></td><td class="line-content">		window.showMessage("Webview has been hidden")</td></tr><tr><td class="line-number" value="85"></td><td class="line-content">	});</td></tr><tr><td class="line-number" value="86"></td><td class="line-content">	document.addEventListener("CLOSED_REWARDED_AD", function(e) {</td></tr><tr><td class="line-number" value="87"></td><td class="line-content">		window.showMessage("Rewarded Ad has been hidden")</td></tr><tr><td class="line-number" value="88"></td><td class="line-content">	});</td></tr><tr><td class="line-number" value="89"></td><td class="line-content">	document.addEventListener("GET_USER_TAGS", function(e) {</td></tr><tr><td class="line-number" value="90"></td><td class="line-content">		window.showMessage("Tags --- "+ JSON.stringify(e.detail))</td></tr><tr><td class="line-number" value="91"></td><td class="line-content">	});</td></tr><tr><td class="line-number" value="92"></td><td class="line-content">	document.addEventListener("SET_USER_TAGS", function(e) {</td></tr><tr><td class="line-number" value="93"></td><td class="line-content">		window.showMessage("Tags --- "+ JSON.stringify(e.detail))</td></tr><tr><td class="line-number" value="94"></td><td class="line-content">	});</td></tr><tr><td class="line-number" value="95"></td><td class="line-content"><span class="html-tag">&lt;/script&gt;</span></td></tr><tr><td class="line-number" value="96"></td><td class="line-content"><span class="html-tag">&lt;/body&gt;</span></td></tr><tr><td class="line-number" value="97"></td><td class="line-content"><span class="html-tag">&lt;/html&gt;</span></td></tr><tr><td class="line-number" value="98"></td><td class="line-content"><span class="html-end-of-file"></span></td></tr></tbody></table></body></html>
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .toast p {
+            margin: 0;
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body style="background:#ff5a60">
+<div class="web-view">
+    <p class="title" id="title">Demo Page</p>
+    <div id="main-container">
+        <Button onclick="sendAction('GET_USER_TAGS')">Get User Tags</Button>
+        <Button onclick="sendAction('SET_USER_TAGS',[
+            'tag1'+Math.random(),'tag2','tag3'
+        ])">Set User Tags</Button>
+        <Button onclick="sendAction('SHOW_REWARDED_AD')">Show Rewarded Ad</Button>
+        <Button onclick="sendAction('START_SPEECH',{
+            'text' : 'Hi there, i am testing text to speech functionality'
+        })">Start Speech</Button>
+        <Button onclick="sendAction('STOP_SPEECH')">Stop Speech</Button>
+        <Button onclick="sendAction('SHOW_WEBVIEW',{
+            uri : 'https://www.google.com'
+        })">Show WebView</Button>
+        <Button onclick="sendAction('LOGOUT')">Logout</Button>
+        <Button onclick="sendAction('SHARE',{
+            title : 'Test Title',
+            message : 'Test Message',
+            options : {
+                url : 'https://www.google.com'
+            }
+        })">Share</Button>
+    </div>
+    <p class="title" id="message"></p>
+</div>
+<script>
+    window.sendAction = function(code,data){
+        window.rnSend({
+            code,
+            data
+        });
+    };
+    window.showMessage = function(message){
+        document.getElementById("message").innerHTML=message;
+    };
+    document.addEventListener("WEBVIEW_HIDE", function(e) {
+        window.showMessage("Webview has been hidden")
+    });
+    document.addEventListener("CLOSED_REWARDED_AD", function(e) {
+        window.showMessage("Rewarded Ad has been hidden")
+    });
+    document.addEventListener("GET_USER_TAGS", function(e) {
+        window.showMessage("Tags --- "+ JSON.stringify(e.detail))
+    });
+    document.addEventListener("SET_USER_TAGS", function(e) {
+        window.showMessage("Tags --- "+ JSON.stringify(e.detail))
+    });
+</script>
+</body>
+</html>
