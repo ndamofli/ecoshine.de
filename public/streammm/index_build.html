@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/streammm.css" />  
+    <link rel="stylesheet" type="text/css" href="css/itv.css" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+<!--    <meta http-equiv="Content-Security-Policy" content="img-src * 'self' data:; default-src * 'self' gap: wss: ws: ; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval';">-->
+    <title>Streammm</title>
+  </head>
+<body>
+<svg style="display: none;" xmlns="http://www.w3.org/2000/svg" version="1.1">
+<symbol id="mic">
+  <path d="M112.1,238.1l-0.1,13.6c0.1,65.6,46,120.6,108.1,136.2c1.3,0.1,2.6,0.5,3.8,0.9c5.9,2,10.1,6.9,12.1,12.8v58.7
+	c0,10.9,8.9,19.7,20,19.7h0.1c11.1,0,19.9-8.8,19.9-19.7v-58.8c2-5.9,6.1-10.7,12-12.7c1.2-0.4,2.5-0.8,3.9-0.9
+	C354,372.3,400,317.3,400,251.7v-13.6c0-10.4-8.9-18.9-19.5-18.9c-10.6,0-19.5,8.4-19.5,18.9v13.6c0,28.5-11.5,54.1-30.6,72.8
+	c-19.2,18.6-45.3,30.2-74.5,30.2c-29.2,0-55.1-11.5-74.2-30.2c-19.1-18.7-30.7-44.4-30.7-72.8v-13.6c0-10.4-8.8-18.9-19.5-18.9
+	C120.9,219.2,112.1,227.7,112.1,238.1z"></path>
+  <path d="M179,107.7v143.8c0,41.8,34.7,75.7,77.5,75.7c42.8,0,77.5-33.9,77.5-75.7V107.7c0-41.8-34.7-75.7-77.5-75.7C213.7,32,179,65.9,179,107.7z"></path>
+</symbol>
+<symbol id="fa-plus">
+  <path d="M1600 736v192q0 40-28 68t-68 28h-416v416q0 40-28 68t-68 28h-192q-40 0-68-28t-28-68v-416h-416q-40 0-68-28t-28-68v-192q0-40 28-68t68-28h416v-416q0-40 28-68t68-28h192q40 0 68 28t28 68v416h416q40 0 68 28t28 68z"/>
+</symbol>
+<symbol id="fa-check">
+  <path d="M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z"/>
+</symbol>
+<symbol id="play">
+  <path stroke-width="6" d="M212 383l130 -108c1,-1 2,-2 2,-3 10,-10 10,-22 0,-32 0,-1 -1,-2 -2,-3l-130 -108c-5,-4 -9,-7 -14,-10 -6,-2 -12,-4 -17,-3 -10,2 -15,6 -18,12 -2,5 -3,10 -3,18l0 5 0 0 0 210 0 0 0 5c0,8 1,13 3,18 3,6 8,10 18,12 5,1 11,-1 17,-3 5,-3 9,-6 14,-10z"/>
+</symbol>
+<symbol id="playFF">
+   <path stroke-width="6" d="M147 345l92 -76c1,0 2,-1 2,-1 7,-8 7,-16 0,-24 0,0 -1,-1 -2,-1l-92 -76c-3,-3 -6,-5 -10,-7 -4,-2 -8,-3 -12,-2 -7,1 -10,4 -13,8 -1,3 -2,7 -1,13l0 3 0 0 0 148 0 0 0 3c-1,6 0,10 1,13 3,4 6,7 13,8 4,1 8,0 12,-2 4,-2 7,-4 10,-7z"/>
+   <path stroke-width="6" d="M302 345l93 -76c0,0 1,-1 1,-1 7,-8 7,-16 0,-24 0,0 -1,-1 -1,-1l-93 -76c-3,-3 -6,-5 -10,-7 -4,-2 -8,-3 -12,-2 -7,1 -10,4 -12,8 -2,3 -2,7 -2,13l0 3 0 0 0 148 0 0 0 3c0,6 0,10 2,13 2,4 5,7 12,8 4,1 8,0 12,-2 4,-2 7,-4 10,-7z"/>
+</symbol>
+<symbol id="soundOn">
+  <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+  <path d="M0 0h24v24H0z" fill="none"/>
+</symbol>
+<symbol id="soundOff">
+  <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+  <path d="M0 0h24v24H0z" fill="none"/>
+</symbol>
+<symbol id="share">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z"/>
+</symbol>
+<symbol id="settings">
+  <path d="M0 0h24v24H0z" fill="none"/>
+  <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+</symbol>
+<symbol id="search">
+  <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+  <path d="M0 0h24v24H0z" fill="none"/>
+</symbol>
+</svg>
+<svg width="0" height="0">
+  <defs>
+    <linearGradient id="streammmgrad" x1="0" y1="1" x2="0" y2="-0.5">
+      <stop offset="0" stop-color="#00051b" stop-opacity="0.65"/>
+      <stop offset="1" stop-color="#DA1B3A" stop-opacity="0.75"/>
+    </linearGradient>
+  </defs>
+</svg>
+
+<div id="streammmPlaylist">PLAYING ALL</div>
+<div id="aiPrompt"><span id="aiSpan"></span></div>
+<div id="title-wrap"><div id="title-text-container"></div></div>
+<div id="logoHolder"><div id="logoMover"></div></div> 
+<canvas class="main-render" id="main-render"></canvas>
+
+<script type="text/javascript" src="js/main.min.js"></script>
+
+<script type="text/javascript" src="js/index.js"></script>
+
+<script type="text/javascript">
+// window.localStorage.clear();
+//  app.initialize();
+  deviceReady();
+</script>
+</body>
+</html>
