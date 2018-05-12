@@ -29,9 +29,9 @@ body{
 window.onerror = function(a, b, c) {
   alert(a + ", " + b + ", " + c);
 };
-window.onload = function(){
- TweenLite.to("#logo", 10, {left:600});
-}
+setTimeout(function(){ 
+  TweenLite.to("#logo", 10, {left:600});
+}, 3000);
 </script>
 </body>
 </html>
