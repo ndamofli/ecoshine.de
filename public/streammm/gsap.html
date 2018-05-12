@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streammm</title>
+  </head>
+  <style>
+body{
+  background-color:#000;
+  color:white;
+}
+#demo {
+  width: 692px;
+  height: 60px;	
+  background-color: #333;
+  padding: 8px;
+}
+#logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo_black_1.jpg)no-repeat;
+}
+  </style>
+<body>
+<div id="demo">
+  <div id="logo"></div>
+</div>
+<script type="text/javascript">
+window.onerror = function(a, b, c) {
+  alert(a + ", " + b + ", " + c);
+};
+window.onload = function(){
+ TweenLite.to("#logo", 10, {left:600});
+}
+</script>
+</body>
+</html>
