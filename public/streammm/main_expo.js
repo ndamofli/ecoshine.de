@@ -1870,8 +1870,8 @@ var _promptModule = require("../prompt-module");
 var _addLogo = exports._addLogo = function _addLogo() {
 	// create the PIXI loader
 	var _logoLoader = new PIXI.loaders.Loader();
-	_logoLoader.add("logo-sprite", "js/stream-logo-sprite.json") // animated logo
-	.add("menu_button", "images/streammm_main_btn.png") // menu button
+	_logoLoader.add("logo-sprite", "stream-logo-sprite.json") // animated logo
+	.add("menu_button", "streammm_main_btn.png") // menu button
 	.load(_logoLoaded); // callback
 };
 
@@ -2056,7 +2056,7 @@ var _stopLoaderAnimation = exports._stopLoaderAnimation = function _stopLoaderAn
 };
 
 var _createLoader = exports._createLoader = function _createLoader() {
-	PIXI.loader.add("js/stream-preloader-sprite.json").load(_loaderLoaded);
+	PIXI.loader.add("stream-preloader-sprite.json").load(_loaderLoaded);
 };
 
 },{"../pixi-module":18,"../window":37}],17:[function(require,module,exports){
@@ -8411,13 +8411,6 @@ function streammmStart(alldata) {
   checkFinished();
 
   function goAhead(){
-    //Firebase
-    if(firebaseObj.enabled){
-      if(window.currentGroup !== 0){
-        alldata.slides = firebaseObj.data.concat(alldata.slides);
-	  }
-	  firebaseObj.data = [];
-	}
     var data = [];
     data = alldata.slides;
     var sets = [];
