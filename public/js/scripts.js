@@ -49,6 +49,14 @@ jQuery( document ).ready( function ( $ ) {
       window.currentSelection = "smart";
 	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
     }
+    if( $(this).hasClass("mittelremondis") && window.currentSelection != "mittelremondis"){
+      window.currentSelection = "mittelremondis";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Mittelklasse');
+    }
+    if( $(this).hasClass("sedanremondis") && window.currentSelection != "sedanremondis"){
+      window.currentSelection = "sedanremondis";
+	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Sedan+%2F+Kombi');
+    }
   });
   function bindEvent(element, eventName, eventHandler) {
     if (element.addEventListener) {
