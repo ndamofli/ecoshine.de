@@ -7409,7 +7409,7 @@ html {
     -webkit-box-shadow:0 3px 14px 2px rgba(170,170,170,0.21);
     box-shadow:0 3px 14px 2px rgba(170,170,170,0.21);
 }
-#tm-row-5a8ab5494a89a{
+.tm-row-5a8ab5494a89a{
 
     -moz-box-shadow:0 15px 40px 0 rgba(170,170,170,0.21);
     -webkit-box-shadow:0 15px 40px 0 rgba(170,170,170,0.21);
@@ -8142,6 +8142,10 @@ html {
 }
 .blueSelected .heading{
     color:#fff;
+}
+
+#ecoLoc h4{
+	color:#2D72FE!important;
 }
 
 /*lighgallery*/
