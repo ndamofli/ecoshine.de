@@ -35,19 +35,23 @@ jQuery( document ).ready( function ( $ ) {
     });
     if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
       window.currentSelection = "mittel";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
+	  //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
+		$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&appointmentType=category:Mittelklasse');
     }
     if( $(this).hasClass("sedan") && window.currentSelection != "sedan"){
       window.currentSelection = "sedan";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
+	  //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
+    $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&appointmentType=category:Sedan+%2F+Kombi');
     }
     if( $(this).hasClass("suv") && window.currentSelection != "suv"){
       window.currentSelection = "suv";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
+	  //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
+		$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&appointmentType=category:SUV+%2F+7-sitzer');	  
     }
     if( $(this).hasClass("smart") && window.currentSelection != "smart"){
       window.currentSelection = "smart";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
+	  //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
+		$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&appointmentType=category:Smart');
     }
     if( $(this).hasClass("mittelremondis") && window.currentSelection != "mittelremondis"){
       window.currentSelection = "mittelremondis";
