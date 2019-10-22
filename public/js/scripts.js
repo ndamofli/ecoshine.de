@@ -35,6 +35,7 @@ jQuery( document ).ready( function ( $ ) {
 		$('#bookIframe').height(150+"px");
     $(this).addClass("blueSelected");
     $('#ecoType').show();
+		window.currentSelection = "null";	
 
 		//Koln
     if( $(this).hasClass("koln") && window.currentLocation != 1928351){
