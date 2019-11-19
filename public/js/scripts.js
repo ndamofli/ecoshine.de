@@ -25,37 +25,92 @@ jQuery( document ).ready( function ( $ ) {
   $('.abouts2').matchHeight({byRow: false,property: 'height'});
   window.oldHeight = 0;
   window.currentSelection = "null";	
+  window.currentLocation = "null";
+	
+	$('#ecoType').hide();
+	
+  $(".locSelector").click(function () {
+    $(".locSelector").removeClass("blueSelected");
+		$(".typeSelector").removeClass("blueSelected");
+		$('#bookIframe').height(150+"px");
+    $(this).addClass("blueSelected");
+    $('#ecoType').show();
+		window.currentSelection = "null";	
+
+		//Koln
+    if( $(this).hasClass("koln") && window.currentLocation != 1928351){
+      window.currentLocation = 1928351;
+			$('#bookIframe').attr('src', '');
+			$(".schritts").hide();
+      $.smoothScroll({
+        scrollTarget: '#ecoType',
+				offset:-300
+      });			
+    }
+		//Palais
+    if( $(this).hasClass("palais") && window.currentLocation != 1928357){
+      window.currentLocation = 1928357;
+			$('#bookIframe').attr('src', '');
+			$(".schritts").hide();
+      $.smoothScroll({
+        scrollTarget: '#ecoType',
+				offset:-300
+      });
+    }
+  });
+	
   $(".typeSelector").click(function () {
     $(".typeSelector").removeClass("blueSelected");
     $(this).addClass("blueSelected");
-	$(".schritts").hide();
-
-    $.smoothScroll({
-      scrollTarget: '#book2'
-    });
     if( $(this).hasClass("mittel") && window.currentSelection != "mittel"){
       window.currentSelection = "mittel";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
+	    //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Mittelklasse');
+  		$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID='+window.currentLocation+'&appointmentType=category:Mittelklasse');
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
     if( $(this).hasClass("sedan") && window.currentSelection != "sedan"){
       window.currentSelection = "sedan";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
+	    //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Sedan+%2F+Kombi');
+		  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID='+window.currentLocation+'&appointmentType=category:Sedan+%2F+Kombi');
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
     if( $(this).hasClass("suv") && window.currentSelection != "suv"){
       window.currentSelection = "suv";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
+      //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:SUV+%2F+7-sitzer');	  
+      $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID='+window.currentLocation+'&appointmentType=category:SUV+%2F+7-sitzer');
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
     if( $(this).hasClass("smart") && window.currentSelection != "smart"){
       window.currentSelection = "smart";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
+	    //$('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=1928357&appointmentType=category:Smart');
+		  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID='+window.currentLocation+'&appointmentType=category:Smart');
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
+		
+		//REMONDIS
     if( $(this).hasClass("mittelremondis") && window.currentSelection != "mittelremondis"){
       window.currentSelection = "mittelremondis";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Mittelklasse');
+      $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Mittelklasse');
+			$(".schritts").hide();
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
     if( $(this).hasClass("sedanremondis") && window.currentSelection != "sedanremondis"){
       window.currentSelection = "sedanremondis";
-	  $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Sedan+%2F+Kombi');
+	    $('#bookIframe').attr('src', 'https://app.acuityscheduling.com/schedule.php?owner=15195881&calendarID=2672416&appointmentType=category:Sedan+%2F+Kombi');
+			$(".schritts").hide();
+      $.smoothScroll({
+        scrollTarget: '#book2'
+      });
     }
   });
   function bindEvent(element, eventName, eventHandler) {
